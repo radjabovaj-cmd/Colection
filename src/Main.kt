@@ -1,41 +1,31 @@
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 fun main() {
-
-
-//    val readOnlyFruits = listOf("apple", "orange", "grape")
-//    val mutablefruits = mutableListOf("apple", "orange", "grape")
+//    val fruits = mutableSetOf<String>("apple", "banana", "orange")
+//    fruits.add("apple")
+//    fruits.add("lemon")
+//    println(fruits)
 //
-//    println(readOnlyFruits[0])
-//    println(mutablefruits.get(0))
-//
-//    mutablefruits.add("banana")
-//    mutablefruits.remove("apple")
-//    mutablefruits.removeAt(0)
-//    mutablefruits.set(0, "kiwi")
-//    mutablefruits[0] = "kiwi"
-//    mutablefruits.add("pear")
-//    mutablefruits.clear()
-//    mutablefruits.sort()
-//    println(mutablefruits)
+//    val fruitList = fruits.sortedBy { it }
+//    fruitList.forEach { println(it) }
 
 
-//    val group = mutableListOf<Person>(
-//        Person("Shahjahon", 15, "Navoiy"),
-//        Person("Jamshid", 15, "Navoiy")
+//    val animal = mutableSetOf<Animal>(
+//        Animal("Dog", 5, "Black"),
+//        Animal("Cat", 4, "White"),
+//        Animal("Horse", 2, "Brown"),
 //    )
-//
-//    group.add(Person("Saidbek", 15, "O'zbekiston"))
-//    group.sortBy { it.name }
-//    println(group)
+//    animal.add(Animal("Dog", 4, "Black"))
+//    animal.add(Animal("Donkey", 2, "Pink"))
+//    animal.forEach { println(it.color) }
 
 
-    val book = mutableListOf<Book>(
-        Book("Binafsha shulasi", "Ozbekiston", 100),
-        Book("O'limdan keyingi hayot", "Ozbekiston", 200),
+    val kasb = mutableSetOf<Job>(
+        Job("Doctor", 3000000, "treating patients"),
+        Job("Teacher", 2000000, "Teaching children"),
+        Job("Businessman", 1000000000, "Biliman ay"),
     )
-    book.add(Book("Bmn", "China", 250))
-    book.sortBy { it.name }
-    println(book)
+    kasb.add(Job("Developer", 1009867568, "creating a program"))
 
+    kasb.forEach { println(it) }
 }
